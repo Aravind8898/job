@@ -155,7 +155,7 @@ def main(position, location):
             break
 
 #SAVING THE JOB DATA
-        with open('results2.csv', 'w', newline='', encoding='utf-8') as f:
+        with open('results.csv', 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
             writer.writerow(['job_title', 'job_company_name', 'job_location', 'job_salary', 'job_details', 'job_date', 'today_date'])
             writer.writerows(records)
